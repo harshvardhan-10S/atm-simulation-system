@@ -52,6 +52,41 @@ It demonstrates:
 
 ---
 
+## 🖥️ Output Demonstration
+
+This section highlights the **actual working output** of the Smart ATM Simulator.  
+The program provides a realistic, step-by-step banking experience similar to an ATM.
+
+---
+
+### 🔹  Startup Screen  
+When the program begins, the ATM displays:
+
+- Card insertion simulation  
+- PIN entry prompt  
+- Masked PIN input (`****`) for security  
+- Personalized welcome message  
+
+### 🔹 2️⃣ Main Menu  
+After login, the ATM shows the full list of available operations:
+
+### 🔹 3️⃣ Withdraw Output  
+Shows confirmation of cash withdrawal:
+
+### 🔹 4️⃣ Deposit Output  
+Upon successful deposit, the terminal shows:
+
+### 🔹 5️⃣ Balance Enquiry  
+Displays user’s current balance:
+
+### 🔹 6️⃣ Transaction History Output  
+A detailed list of all previous transactions, timestamped using `time.h`:
+
+### 🔹 7️⃣ PIN Change Output  
+
+### 🎥 8️⃣ Output Video Demo  
+A complete demonstration of the ATM program is available in the project files:
+
 ## 📂 Project Structure
 
 ```text
