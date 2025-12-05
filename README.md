@@ -2,12 +2,6 @@
 
 A console-based ATM Simulator built in **C**, designed to replicate essential banking operations including secure PIN verification, withdrawals, deposits, balance enquiry, PIN updates, and timestamped transaction history.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-C-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Project-ATM%20Simulator-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge"/>
-</p>
-
 ---
 
 ## 🚀 Project Overview
@@ -81,17 +75,6 @@ smart-atm-simulator-c/
 │       └── history.png
 │
 └── README.md
-
----
-
-## 🕒 Transaction Logging System
-
-The transaction history feature uses:
-- `time.h` to capture **current date & time**
-- A dynamic text buffer to store each record
-- Clear formatting similar to real ATM receipts
-
-Example log format:
 
 ```text
 2025-05-30 12:34:44 – Withdraw: Rs. 100.00
