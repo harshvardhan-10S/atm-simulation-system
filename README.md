@@ -59,7 +59,7 @@ The program provides a realistic, step-by-step banking experience similar to an 
 
 ---
 
-### 🔹  Startup Screen  
+### 🔹1️⃣ Startup Screen  
 When the program begins, the ATM displays:
 
 - Card insertion simulation  
