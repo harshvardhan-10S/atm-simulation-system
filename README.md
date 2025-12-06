@@ -1,116 +1,117 @@
-# 📟 Smart ATM Simulator (C Programming Project)
+# Smart ATM Simulator (C Project)
 
-A console-based ATM Simulator built in **C**, designed to replicate essential banking operations including secure PIN verification, withdrawals, deposits, balance enquiry, PIN updates, and timestamped transaction history.
-
----
-
-## 🚀 Project Overview
-
-This project simulates the internal workflow of an ATM machine.  
-It demonstrates:
-
-- Secure 4-digit user authentication  
-- Basic banking transactions  
-- In-memory transaction logging with timestamps  
-- Console color formatting for UI  
-- Beep sounds for a more realistic ATM feel  
+This project is a console-based ATM simulation system developed in C.  
+It replicates the core functionality of an ATM, including PIN authentication, cash withdrawal, deposit, balance enquiry, PIN change, and basic transaction history.
 
 ---
 
-## 🔐 Key Features
+## 1. Project Overview
 
-### 🧾 1. User Authentication
+The objective of this project is to demonstrate how an ATM system works at a logical level using structured programming in C.  
+The system focuses on:
 
-- 4-digit PIN entry (masked input using `_getch()`)  
-- User validation using a `struct User` array  
-- Error beeps for invalid PIN  
+- Secure user authentication using a 4-digit PIN  
+- Clear and simple banking operations  
+- Well-structured, modular code  
+- Console-based user interface with basic feedback
 
----
-
-### 💳 2. Banking Functions
-
-| Function               | Description                                      |
-|------------------------|--------------------------------------------------|
-| **Withdraw**           | Deducts amount + logs transaction                |
-| **Deposit**            | Adds balance + logs transaction                  |
-| **Balance Enquiry**    | Displays current account balance                 |
-| **Transaction History**| Shows recent timestamped transaction records     |
-| **Change PIN**         | Secure PIN update for existing user              |
-| **Exit**               | Ends the ATM session                             |
+This project is suitable as an academic mini-project and as a demonstration of C programming fundamentals.
 
 ---
 
-## 🧠 Technical Concepts Used
+## 2. Features
 
-- **Structures** (`struct User`)  
-- **Arrays & loops** for managing multiple accounts  
-- **Time library** (`time.h`) for timestamps  
-- **Windows API** (`windows.h`) for `Beep()` and `Sleep()`  
-- **Input masking** using `<conio.h>` and `_getch()`  
-- **Modular function design** (separate functions for each feature)  
-- **Error handling** for invalid options and insufficient balance  
+### 2.1 User Functions
+
+- **PIN Authentication**  
+  - 4-digit PIN entry  
+  - Masked input (PIN not visible on screen)  
+  - Basic validation for incorrect attempts  
+
+- **Withdraw**  
+  - Validates available balance  
+  - Deducts amount from account  
+
+- **Deposit**  
+  - Adds amount to current balance  
+
+- **Balance Enquiry**  
+  - Displays current account balance  
+
+- **Transaction Summary (Basic)**  
+  - Shows recent operations in a readable text format  
+
+- **Change PIN**  
+  - Allows user to update PIN after verifying the old one  
+
+- **Exit**  
+  - Safely terminates the session  
 
 ---
 
-## 🖥️ Output Demonstration
+## 3. System Design
 
-This section highlights the **actual working output** of the Smart ATM Simulator.  
-The program provides a realistic, step-by-step banking experience similar to an ATM.
+### 3.1 Logical Components
+
+The project is organized into the following logical parts:
+
+- **User Data Handling**  
+  - Uses a `struct` to store account details (e.g., PIN, balance).  
+
+- **Authentication Module**  
+  - Verifies PIN input against stored data.  
+  - Uses masked input to hide PIN characters.  
+
+- **Transaction Processing**  
+  - Performs deposit and withdrawal operations.  
+  - Includes basic validation (e.g., sufficient balance).  
+
+- **Display and Menu Handling**  
+  - Prints the main menu and reads user choices.  
+  - Handles invalid options with error messages.  
+
+- **PIN Management**  
+  - Verifies current PIN before allowing change.  
 
 ---
 
-### 🔹1️⃣ Startup Screen  
-When the program begins, the ATM displays:
+## 4. Technical Details
 
-- Card insertion simulation  
-- PIN entry prompt  
-- Masked PIN input (`****`) for security  
-- Personalized welcome message  
+### 4.1 Language and Tools
 
-### 🔹 2️⃣ Main Menu  
-After login, the ATM shows the full list of available operations:
+- Programming Language: **C**
+- Recommended IDE: **Code::Blocks** / **VS Code with GCC**
+- Compiler: **GCC** or equivalent
 
-### 🔹 3️⃣ Withdraw Output  
-Shows confirmation of cash withdrawal:
+### 4.2 Concepts Used
 
-### 🔹 4️⃣ Deposit Output  
-Upon successful deposit, the terminal shows:
+- Structures (`struct`)  
+- Functions and modular programming  
+- Loops and conditional statements  
+- Basic input validation  
+- Console input/output  
+- Optional use of:
+  - `<conio.h>` for masked input  
+  - `<time.h>` for timestamps (if extended)
 
-### 🔹 5️⃣ Balance Enquiry  
-Displays user’s current balance:
+---
 
-### 🔹 6️⃣ Transaction History Output  
-A detailed list of all previous transactions, timestamped using `time.h`:
+## 5. Project Structure (Suggested)
 
-### 🔹 7️⃣ PIN Change Output  
-
-### 🎥 8️⃣ Output Video Demo  
-A complete demonstration of the ATM program is available in the project files:
-
-## 📂 Project Structure
+You can organize your repository as:
 
 ```text
 smart-atm-simulator-c/
 │
 ├── src/
-│   └── main.c                      # Complete ATM logic
+│   └── main.c                  # Main ATM program in C
 │
 ├── docs/
 │   ├── ATM_Project_Presentation.pptx
 │   └── ATM_Report.pdf
 │
 ├── demo/
-│   ├── simulation.mp4              # Code execution demo
-│   └── output.mp4                  # Final output demo
-│
-├── assets/
-│   └── screenshots/
-│       ├── menu.png
-│       ├── login.png
-│       └── history.png
+│   ├── ATM_Simulation.mp4      # Code execution / simulation video
+│   └── ATM_Output.mp4          # Final output / usage demo
 │
 └── README.md
-
-```text
-2025-05-30 12:34:44 – Withdraw: Rs. 100.00
-2025-05-30 19:19:59 – Deposit: Rs. 300.00
