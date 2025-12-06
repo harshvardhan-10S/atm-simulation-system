@@ -1,117 +1,120 @@
-# Smart ATM Simulator (C Project)
+# 📟 Smart ATM Simulator (C Project)
 
-This project is a console-based ATM simulation system developed in C.  
-It replicates the core functionality of an ATM, including PIN authentication, cash withdrawal, deposit, balance enquiry, PIN change, and basic transaction history.
-
----
-
-## 1. Project Overview
-
-The objective of this project is to demonstrate how an ATM system works at a logical level using structured programming in C.  
-The system focuses on:
-
-- Secure user authentication using a 4-digit PIN  
-- Clear and simple banking operations  
-- Well-structured, modular code  
-- Console-based user interface with basic feedback
-
-This project is suitable as an academic mini-project and as a demonstration of C programming fundamentals.
+A console-based ATM Simulator built in **C**, designed to replicate essential banking operations such as secure PIN verification, withdrawals, deposits, balance enquiry, PIN change, and basic transaction history.
 
 ---
 
-## 2. Features
+## 📘 1. Project Overview
 
-### 2.1 User Functions
+The project demonstrates how an ATM operates at a logical level using structured programming in C.
 
-- **PIN Authentication**  
-  - 4-digit PIN entry  
-  - Masked input (PIN not visible on screen)  
-  - Basic validation for incorrect attempts  
-
-- **Withdraw**  
-  - Validates available balance  
-  - Deducts amount from account  
-
-- **Deposit**  
-  - Adds amount to current balance  
-
-- **Balance Enquiry**  
-  - Displays current account balance  
-
-- **Transaction Summary (Basic)**  
-  - Shows recent operations in a readable text format  
-
-- **Change PIN**  
-  - Allows user to update PIN after verifying the old one  
-
-- **Exit**  
-  - Safely terminates the session  
+🔹 Secure 4-digit PIN authentication  
+🔹 Modular code structure  
+🔹 Console-based UI  
+🔹 Basic transaction logging  
+🔹 Clean and simple workflow  
 
 ---
 
-## 3. System Design
+## 🧩 2. Features
 
-### 3.1 Logical Components
-
-The project is organized into the following logical parts:
-
-- **User Data Handling**  
-  - Uses a `struct` to store account details (e.g., PIN, balance).  
-
-- **Authentication Module**  
-  - Verifies PIN input against stored data.  
-  - Uses masked input to hide PIN characters.  
-
-- **Transaction Processing**  
-  - Performs deposit and withdrawal operations.  
-  - Includes basic validation (e.g., sufficient balance).  
-
-- **Display and Menu Handling**  
-  - Prints the main menu and reads user choices.  
-  - Handles invalid options with error messages.  
-
-- **PIN Management**  
-  - Verifies current PIN before allowing change.  
+### 🔐 User Functions
+✔️ 4-digit PIN authentication  
+✔️ Masked PIN input (`****`)  
+✔️ Withdraw (with balance validation)  
+✔️ Deposit  
+✔️ Balance enquiry  
+✔️ Transaction summary  
+✔️ Change PIN  
+✔️ Exit session safely  
 
 ---
 
-## 4. Technical Details
+## 🧠 3. System Design
 
-### 4.1 Language and Tools
-
-- Programming Language: **C**
-- Recommended IDE: **Code::Blocks** / **VS Code with GCC**
-- Compiler: **GCC** or equivalent
-
-### 4.2 Concepts Used
-
-- Structures (`struct`)  
-- Functions and modular programming  
-- Loops and conditional statements  
-- Basic input validation  
-- Console input/output  
-- Optional use of:
-  - `<conio.h>` for masked input  
-  - `<time.h>` for timestamps (if extended)
+### 🔹 Logical Components
+- 🧾 **User Data Handling:** struct-based account storage  
+- 🔐 **Authentication Module:** masked PIN + validation  
+- 💸 **Transaction Processing:** withdraw/deposit logic  
+- 📋 **Menu Handling:** clean switch-case based flow  
+- 🔑 **PIN Management:** secure PIN update  
 
 ---
 
-## 5. Project Structure (Suggested)
+## 🛠️ 4. Technical Details
 
-You can organize your repository as:
+### 🖥️ Language and Tools
+- 🔹 C Programming  
+- 🔹 GCC Compiler  
+- 🔹 Code::Blocks / VS Code  
+
+### 💡 Concepts Used
+- 📌 Structures (`struct`)  
+- 📌 Functions (modular approach)  
+- 📌 Loops & condition checks  
+- 📌 Input handling  
+- 📌 Optional: `<conio.h>`, `<time.h>`, `<windows.h>`  
+
+---
+
+## 🖥️ 5. Sample Output
+
+### 🔵 Login & Menu
+
+=== Smart ATM Simulator ===
+Insert Card...
+Enter 4-digit PIN: ****
+Login successful.
+
+1. Withdraw
+2. Deposit
+3. Balance Enquiry
+4. Transaction Summary
+5. Change PIN
+6. Exit
+
+### 🧾 Transaction Summary
+
+Recent Transactions:
+- Withdraw: Rs. 400.00
+- Deposit:  Rs. 100.00
+- Withdraw: Rs. 300.00
+
+### 🟩 Deposit Example
+
+Enter amount to deposit: 500
+Amount deposited successfully.
+
+### 📊 Balance Enquiry
+
+Your current balance is: Rs. 3040.00
+
+### 🔐 PIN Change
+
+Enter old PIN: ****
+Enter new PIN: ****
+PIN changed successfully.
+
+---
+
+## 📁 6. Project Structure
 
 ```text
 smart-atm-simulator-c/
 │
 ├── src/
-│   └── main.c                  # Main ATM program in C
+│   └── main.c
 │
 ├── docs/
 │   ├── ATM_Project_Presentation.pptx
 │   └── ATM_Report.pdf
 │
 ├── demo/
-│   ├── ATM_Simulation.mp4      # Code execution / simulation video
-│   └── ATM_Output.mp4          # Final output / usage demo
+│   ├── ATM_Simulation.mp4
+│   └── ATM_Output.mp4
 │
 └── README.md
+
+---
+
+
