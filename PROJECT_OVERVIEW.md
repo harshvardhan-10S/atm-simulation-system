@@ -8,4 +8,4 @@ This system demonstrates the practical integration of:
 - Computer vision for real-time sensing
 - Embedded system synchronization
 - Adaptive decision-making logic
-- Modular and scalable traffic control design
+- Modular and scalable traffic control design 
