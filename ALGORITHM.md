@@ -14,4 +14,4 @@ Constraints:
 - All transitions include a YELLOW safety phase
 
 ## Synchronization Strategy
-The master controller broadcasts the current signal state to all slave controllers. Slaves update their state immediately upon receiving the signal, ensuring deterministic synchronization and preventing conflicting outputs.
+The master controller broadcasts the current signal state to all slave controllers. Slaves update their state immediately upon receiving the signal, ensuring deterministic synchronization and preventing conflicting outputs. 
