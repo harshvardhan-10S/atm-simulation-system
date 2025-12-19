@@ -1,1 +1,9 @@
+# depslib dependency file v1.0
+1747677044 source:d:\g7_atm_project\atm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<time.h>
+	<conio.h>
 
