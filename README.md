@@ -100,20 +100,34 @@ PIN changed successfully.
 ## 📁 6. Project Structure
 
 ```text
-smart-atm-simulator-c/
+│atm-simulation-system/
+│
+├── README.md
 │
 ├── src/
-│   └── main.c
+│   └── main_code.c   ✅ (FULL CODE HERE)
 │
 ├── docs/
-│   ├── ATM_Project_Presentation.pptx
-│   └── ATM_Report.pdf
+│   ├── PROJECT_OVERVIEW.md
+│   ├── ALGORITHM.md
+│   ├── STATE_MACHINE.md
+│   ├── SETUP_GUIDE.md
+│   ├── TEST_RESULTS.md
+│   ├── KNOWN_LIMITATIONS.md
+│   └── LEARNING_OUTCOMES.md
 │
-├── demo/
-│   ├── ATM_Simulation.mp4
-│   └── ATM_Output.mp4
+├── data/
+│   ├── history_1001.txt
+│   └── history_1002.txt
 │
-└── README.md
+├── ide/
+│   ├── ATM.cbp
+│   ├── ATM.layout
+│   └── ATM.depend
+│
+└── build/
+    ├── main.exe
+    └── main_code.o
 
 ---
 
